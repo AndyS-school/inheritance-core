@@ -1,0 +1,16 @@
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.exe
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.deps.json
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.runtimeconfig.json
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.runtimeconfig.dev.json
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.dll
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\bin\Debug\net5.0\ref\CustomerProduct.dll
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.pdb
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.csproj.AssemblyReference.cache
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.AssemblyInfo.cs
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.dll
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\ref\CustomerProduct.dll
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.pdb
+C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.genruntimeconfig.cache

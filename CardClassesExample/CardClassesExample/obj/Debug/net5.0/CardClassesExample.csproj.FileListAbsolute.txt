@@ -1,0 +1,16 @@
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\bin\Debug\net5.0\CardClassesExample.exe
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\bin\Debug\net5.0\CardClassesExample.deps.json
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\bin\Debug\net5.0\CardClassesExample.runtimeconfig.json
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\bin\Debug\net5.0\CardClassesExample.runtimeconfig.dev.json
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\bin\Debug\net5.0\CardClassesExample.dll
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\bin\Debug\net5.0\ref\CardClassesExample.dll
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\bin\Debug\net5.0\CardClassesExample.pdb
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\obj\Debug\net5.0\CardClassesExample.csproj.AssemblyReference.cache
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\obj\Debug\net5.0\CardClassesExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\obj\Debug\net5.0\CardClassesExample.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\obj\Debug\net5.0\CardClassesExample.AssemblyInfo.cs
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\obj\Debug\net5.0\CardClassesExample.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\obj\Debug\net5.0\CardClassesExample.dll
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\obj\Debug\net5.0\ref\CardClassesExample.dll
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\obj\Debug\net5.0\CardClassesExample.pdb
+C:\Users\Student\Desktop\New folder\classeslabtwo_core-AndyS-school\FreshStart\CardClassesExample\CardClassesExample\obj\Debug\net5.0\CardClassesExample.genruntimeconfig.cache
