@@ -73,37 +73,19 @@ namespace CardClasses
         //checks you hand for a given card and tells you it's index if it's there
         public int IndexOf(Card c)
         {
-            int i = -1;
-            foreach (Card d in cards)
-            {
-
-                if (c.GetHashCode() == d.GetHashCode())
-                    i = IndexOf(d);
-            }
-            return i;
+            int index = IndexOf(c);
+            return index;
         }
 
         public int IndexOf(int value)
         {
-            int i = -1;
-            foreach (Card d in cards)
-            {
-
-                if (value == d.Value)
-                    i = IndexOf(d);
-            }
+            int i = IndexOf(value);
             return i;
         }
 
         public int IndexOf(int value, int suit)
         {
-            int i = -1;
-            foreach (Card d in cards)
-            {
-
-                if (value == d.Value && suit == d.Suit)
-                    i = IndexOf(d);
-            }
+           int i = IndexOf(value, suit);
             return i;
         }
 

@@ -16,6 +16,14 @@ namespace CardTests
             //TestDeckShuffle();
             //TestDeckDeal();
 
+            TestHandConstructor();
+            TestAddCard();
+            TestRemoveCard();
+            TestGetCard();
+            TestIndexOf();
+            TestEqualTo();
+            TestHandToString();
+
             Console.ReadLine();
         }
 
@@ -62,6 +70,81 @@ namespace CardTests
             Console.WriteLine("Dealing again should return null. Expecting true. " + (d.Deal() == null));
 
             Console.WriteLine();
+        }
+
+        static void TestHandConstructor()
+        {
+            Deck a = new Deck();
+            Hand d = new Hand();
+
+            Console.WriteLine("Testing hand of cards default constructor");
+            Console.WriteLine("NumCards.  Expecting 0. " + d.NumCards);
+            Console.WriteLine("ToString.  Expect no cards in order.\n" + d.ToString());
+            Console.WriteLine();
+
+            Hand c = new Hand(a, 1);
+
+            Console.WriteLine("Testing hand of cards overloaded constructor");
+            Console.WriteLine("NumCards.  Expecting 1. " + c.NumCards);
+            Console.WriteLine("ToString.  Expect 1 card.\n" + c.ToString());
+            Console.WriteLine();
+        }
+
+        static void TestAddCard()
+        {
+            Hand c = new Hand();
+            Console.WriteLine("Testing card adding. Expect 0: " + c.NumCards);
+            c.AddCard(1, 1);
+            Console.WriteLine("Testing card adding. Expect 1: " + c.NumCards);
+        }
+
+        static void TestRemoveCard()
+        {
+            Deck d = new Deck();
+            Hand c = new Hand(d, 1);
+            Console.WriteLine("Testing card removing. Expect 1: " + c.NumCards);
+            Console.WriteLine("Removed Card: " + c.Discard(0));
+            Console.WriteLine("Testing card removing. Expect 0: " + c.NumCards);
+        }
+
+        static void TestGetCard()
+        {
+            Deck d = new Deck();
+            Hand c = new Hand(d, 1);
+            Console.WriteLine("Testing card getting. Gotten Card: " + c.GetCard(0));
+        }
+
+        static void TestIndexOf()
+        {
+            Deck d = new Deck();
+            Hand c = new Hand(d, 3);
+            Card one = new Card(1, 1);
+            Card two = new Card(1, 2);
+            Console.WriteLine("Testing indexer. Obj expect 0: " + c.IndexOf(one));
+            Console.WriteLine("Testing indexer. Value + Suit expect 1: " + c.IndexOf(1, 2));
+            Console.WriteLine("Testing indexer. Value expect 3: " + c.IndexOf(1));
+        }
+
+        //HasCard in mary's screencast, just a differant name
+        static void TestEqualTo()
+        {
+            Deck d = new Deck();
+            Hand c = new Hand(d, 3);
+            Card one = new Card(1, 1);
+            Card nine = new Card(9, 4);
+            Console.WriteLine("Testing EqualTo. Obj expect true: " + c.EqualTo(one));
+            Console.WriteLine("Testing EqualTo. Obj expect false: " + c.EqualTo(nine));
+            Console.WriteLine("Testing EqualTo. Value + Suit expect true: " + c.EqualTo(1,2));
+            Console.WriteLine("Testing EqualTo. Value + Suit expect false: " + c.EqualTo(9, 4));
+            Console.WriteLine("Testing EqualTo. Value expect true: " + c.EqualTo(1));
+            Console.WriteLine("Testing EqualTo. Value expect false: " + c.EqualTo(9));
+        }
+
+        static void TestHandToString()
+        {
+            Deck d = new Deck();
+            Hand c = new Hand(d, 7);
+            Console.WriteLine("Testing hand ToString. Expect 7 cards: /n" + c.ToString());
         }
     }
 }
