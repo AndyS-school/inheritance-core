@@ -116,6 +116,24 @@ namespace CardClasses
                 return false;
         }
 
+        public override int GetHashCode()
+        {
+            return 13 + 7 * suit.GetHashCode() +
+                7 * value.GetHashCode();
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || obj.GetType() != this.GetType())
+                return false;
+            else
+            {
+                Card other = (Card)obj;
+                return other.value == value &&
+                    other.suit == suit;
+            }
+        }
+
         public override string ToString()
         {
             return values[value] + " of " + suits[suit];

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Schoolin\\Spring 2023\\Cs2_Lab5_GitRepo\\classeslabtwo_core-AndyS-school\\FreshStart\\CardClassesExample\\CardClassesExample\\CardClassesExample.csproj": {}
+    "D:\\Schoolin\\Spring 2023\\Cs2_Lab6\\inheritance-core\\CardClassesExample\\CardClassesExample\\CardClassesExample.csproj": {}
   },
   "projects": {
-    "D:\\Schoolin\\Spring 2023\\Cs2_Lab5_GitRepo\\classeslabtwo_core-AndyS-school\\FreshStart\\CardClassesExample\\CardClassesExample\\CardClassesExample.csproj": {
+    "D:\\Schoolin\\Spring 2023\\Cs2_Lab6\\inheritance-core\\CardClassesExample\\CardClassesExample\\CardClassesExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Schoolin\\Spring 2023\\Cs2_Lab5_GitRepo\\classeslabtwo_core-AndyS-school\\FreshStart\\CardClassesExample\\CardClassesExample\\CardClassesExample.csproj",
+        "projectUniqueName": "D:\\Schoolin\\Spring 2023\\Cs2_Lab6\\inheritance-core\\CardClassesExample\\CardClassesExample\\CardClassesExample.csproj",
         "projectName": "CardClassesExample",
-        "projectPath": "D:\\Schoolin\\Spring 2023\\Cs2_Lab5_GitRepo\\classeslabtwo_core-AndyS-school\\FreshStart\\CardClassesExample\\CardClassesExample\\CardClassesExample.csproj",
+        "projectPath": "D:\\Schoolin\\Spring 2023\\Cs2_Lab6\\inheritance-core\\CardClassesExample\\CardClassesExample\\CardClassesExample.csproj",
         "packagesPath": "C:\\Users\\andys\\.nuget\\packages\\",
-        "outputPath": "D:\\Schoolin\\Spring 2023\\Cs2_Lab5_GitRepo\\classeslabtwo_core-AndyS-school\\FreshStart\\CardClassesExample\\CardClassesExample\\obj\\",
+        "outputPath": "D:\\Schoolin\\Spring 2023\\Cs2_Lab6\\inheritance-core\\CardClassesExample\\CardClassesExample\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -14,3 +14,19 @@ C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\Custom
 C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\ref\CustomerProduct.dll
 C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.pdb
 C:\Users\Student\Desktop\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.genruntimeconfig.cache
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.exe
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.deps.json
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.runtimeconfig.json
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.runtimeconfig.dev.json
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.dll
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\bin\Debug\net5.0\ref\CustomerProduct.dll
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\bin\Debug\net5.0\CustomerProduct.pdb
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.csproj.AssemblyReference.cache
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.GeneratedMSBuildEditorConfig.editorconfig
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.AssemblyInfoInputs.cache
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.AssemblyInfo.cs
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.csproj.CoreCompileInputs.cache
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.dll
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\obj\Debug\net5.0\ref\CustomerProduct.dll
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.pdb
+D:\Schoolin\Spring 2023\Cs2_Lab6\inheritance-core\CustomerProduct\CustomerProduct\CustomerProduct\obj\Debug\net5.0\CustomerProduct.genruntimeconfig.cache
