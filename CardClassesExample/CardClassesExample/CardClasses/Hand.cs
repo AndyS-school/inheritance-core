@@ -11,11 +11,20 @@ namespace CardClasses
         // can instantiate the list here OR in the constructor
         private List<Card> cards = new List<Card>();
 
-        public Hand(int handLimit)
+        public Hand() { }
+
+        public Hand(Deck d, int maxHand)
         {
-            // 13 values
-            for (int i = 1; i <= handLimit; i++)
-                Deal();
+            for(int i = 0; i < maxHand; i++)
+            {
+                Card c = d.Deal();
+                cards.Add(c);
+            }
+        }
+
+        public void AddCard(int value, int suit)
+        {
+            cards.Add(new Card(value, suit));
         }
 
         // read-only property
@@ -27,59 +36,90 @@ namespace CardClasses
             }
         }
 
-        // read-only property
-        public bool IsEmpty
-        {
-            get
-            {
-                return (cards.Count == 0);
-            }
-        }
-
-        public Card this[int i]
-        {
-            get
-            {
-                return cards[i];
-            }
-        }
-
         //checks your hand if there's a card equal to the query and returns true/false depending if it's there or not
-        public bool EqualTo(object obj, int suit, int value)
+        public bool EqualTo(Card c)
         {
-            bool equal = false;
-
-            return equal;
+            bool match = false;
+            foreach(Card d in cards)
+            {
+                if (c.GetHashCode() == d.GetHashCode())
+                    match = true;
+            }
+            return match;
+        }
+        //checks your hand if you have a card equal in value to the query
+        public bool EqualTo(int value)
+        {
+            bool match = false;
+            foreach (Card c in cards)
+            {
+                if (c.Value == value)
+                    match = true;
+            }
+            return match;
+        }
+        //check your hand to see if you have a card that matches both query value and suit
+        public bool EqualTo(int value, int suit)
+        {
+            bool match = false;
+            foreach (Card c in cards)
+            {
+                if (c.Value == value && c.Suit == suit)
+                    match = true;
+            }
+            return match;
         }
 
         //checks you hand for a given card and tells you it's index if it's there
-        public int GetCardIndex(object obj, int suit, int value)
+        public int IndexOf(Card c)
         {
-            int i = 0;
+            int i = -1;
+            foreach (Card d in cards)
+            {
 
+                if (c.GetHashCode() == d.GetHashCode())
+                    i = IndexOf(d);
+            }
+            return i;
+        }
+
+        public int IndexOf(int value)
+        {
+            int i = -1;
+            foreach (Card d in cards)
+            {
+
+                if (value == d.Value)
+                    i = IndexOf(d);
+            }
+            return i;
+        }
+
+        public int IndexOf(int value, int suit)
+        {
+            int i = -1;
+            foreach (Card d in cards)
+            {
+
+                if (value == d.Value && suit == d.Suit)
+                    i = IndexOf(d);
+            }
             return i;
         }
 
         // removes a card from the hand based on it's index
-        public void Discard(int discardIndex)
+        public Card Discard(int discardIndex)
         {
                 Card c = cards[discardIndex];
                 cards.Remove(c);
+                return c;
         }
 
-        public void Shuffle()
+        //tells you what the card in a given index is
+        public Card GetCard(int cardIndex)
         {
-            Random gen = new Random();
-            // go through all of the cards in the deck
-            for (int i = 0; i < NumCards; i++)
-            {
-                // generate a random index
-                int rnd = gen.Next(0, NumCards);
-                // swap the card at the random index with the card at the current index
-                Card c = cards[rnd];
-                cards[rnd] = cards[i];
-                cards[i] = c;
-            }
+            Card c = cards[cardIndex];
+            return c;
         }
 
         public override string ToString()
