@@ -26,13 +26,13 @@ namespace CardTests
             TestHandToString();
             */
 
-            //TestBJAce();
-            //TestBJBust();
-            //TestBJScore();
+            TestBJAce();
+            TestBJBust();
+            TestBJScore();
 
             Console.ReadLine();
         }
-        /*
+
         static void TestDeckConstructor()
         {
             Deck d = new Deck();
@@ -197,44 +197,6 @@ namespace CardTests
 
             Console.WriteLine("Testing BJ Score. Expect 30: " + c.Score());
             Console.WriteLine("Testing BJ Score. Expect 21: " + b.Score());
-        }
-        */
-        //generates and instantly shuffles the deck before returning
-        public Deck GenDeck()
-        {
-            Deck d = new Deck();
-            d.Shuffle();
-            return d;
-        }
-        public BJHand GenPlayerHand(Deck d)
-        {
-            d.Shuffle();
-            BJHand playerHand = new BJHand(d, 2);
-            return playerHand;
-        }
-        public BJHand GenComputerHand(Deck d)
-        {
-            d.Shuffle();
-            BJHand computerHand = new BJHand(d, 2);
-            return computerHand;
-        }
-        //methods to check if player/comp has busted
-        public bool PlayerBust(BJHand playerHand)
-        {
-            return playerHand.IsBusted();
-        }
-        public bool ComputerBust(BJHand computerHand)
-        {
-            return computerHand.IsBusted();
-        }
-        //methods to check player/comp scores
-        public int PlayerScore(BJHand playerHand)
-        {
-            return playerHand.Score();
-        }
-        public int ComputerScore(BJHand computerHand)
-        {
-            return computerHand.Score();
         }
     }
 }

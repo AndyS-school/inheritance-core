@@ -9,7 +9,7 @@ namespace CardClasses
     public class Hand
     {
         // can instantiate the list here OR in the constructor
-        private List<Card> cards = new List<Card>();
+        protected List<Card> cards = new List<Card>();
 
         public Hand() { }
 
@@ -73,22 +73,36 @@ namespace CardClasses
         //checks you hand for a given card and tells you it's index if it's there
         public int IndexOf(Card c)
         {
-            int index = IndexOf(c);
+            int index = cards.IndexOf(c);
             return index;
         }
-
+        
         public int IndexOf(int value)
         {
-            int i = IndexOf(value);
+            int i = -1;
+            foreach(Card c in cards)
+            {
+                if(c.Value == value)
+                {
+                    i = cards.IndexOf(c);
+                }
+            }
             return i;
         }
 
         public int IndexOf(int value, int suit)
         {
-           int i = IndexOf(value, suit);
+            int i = -1;
+            foreach (Card c in cards)
+            {
+                if (c.Value == value && c.Suit == suit)
+                {
+                    i = cards.IndexOf(c);
+                }
+            }
             return i;
         }
-
+        
         // removes a card from the hand based on it's index
         public Card Discard(int discardIndex)
         {
