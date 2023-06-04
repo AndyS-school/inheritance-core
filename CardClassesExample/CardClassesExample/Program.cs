@@ -25,12 +25,16 @@ namespace CardTests
             TestEqualTo();
             TestHandToString();
             */
+            
 
             //TestBJAce();
             //TestBJBust();
             //TestBJScore();
             
-
+            //
+            //blackjack method
+            //
+            
             //gens new deck and deals starting cards
             Deck d = GenDeck();
             BJHand computerHand = GenComputerHand(d);
@@ -62,8 +66,9 @@ namespace CardTests
                 Console.WriteLine("Push");
 
             Console.ReadLine();
+            
         }
-        /*
+
         static void TestDeckConstructor()
         {
             Deck d = new Deck();
@@ -229,7 +234,11 @@ namespace CardTests
             Console.WriteLine("Testing BJ Score. Expect 30: " + c.Score());
             Console.WriteLine("Testing BJ Score. Expect 21: " + b.Score());
         }
-        */
+        
+
+        //
+        // Problem 3 methods
+        //
         //generates and instantly shuffles the deck before returning
         public static Deck GenDeck()
         {
