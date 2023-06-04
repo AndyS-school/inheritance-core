@@ -29,6 +29,37 @@ namespace CardTests
             //TestBJAce();
             //TestBJBust();
             //TestBJScore();
+            
+
+            //gens new deck and deals starting cards
+            Deck d = GenDeck();
+            BJHand computerHand = GenComputerHand(d);
+            BJHand playerHand = GenPlayerHand(d);
+            Hands(playerHand, computerHand);
+
+            bool noHit = false;
+            do
+            {
+                Console.WriteLine("//////////////////////////////////////////");
+                bool pHit = PlayerHit(playerHand, d);
+                bool cHit = ComputerHit(computerHand, d);
+                Hands(playerHand, computerHand);
+
+                if (pHit == false && cHit == false)
+                    noHit = true;
+            } while (noHit == false);
+
+            //checks if either player is bust and declairs the other the winner, otherwise checks who has the higher hand, or if it's a tie
+            if (playerHand.IsBusted() == true)
+                Console.WriteLine("Dealer Wins");
+            else if (computerHand.IsBusted() == true)
+                Console.WriteLine("Player Wins");
+            else if (playerHand.Score() > computerHand.Score())
+                Console.WriteLine("Player Wins");
+            else if (computerHand.Score() > playerHand.Score())
+                Console.WriteLine("Computer Wins");
+            else
+                Console.WriteLine("Push");
 
             Console.ReadLine();
         }
@@ -200,41 +231,94 @@ namespace CardTests
         }
         */
         //generates and instantly shuffles the deck before returning
-        public Deck GenDeck()
+        public static Deck GenDeck()
         {
             Deck d = new Deck();
             d.Shuffle();
             return d;
         }
-        public BJHand GenPlayerHand(Deck d)
+        //makes the stating hands
+        public static BJHand GenPlayerHand(Deck d)
         {
-            d.Shuffle();
             BJHand playerHand = new BJHand(d, 2);
             return playerHand;
         }
-        public BJHand GenComputerHand(Deck d)
+        public static BJHand GenComputerHand(Deck d)
         {
-            d.Shuffle();
             BJHand computerHand = new BJHand(d, 2);
             return computerHand;
         }
-        //methods to check if player/comp has busted
-        public bool PlayerBust(BJHand playerHand)
+
+        //asks if the player wants to hit
+        public static bool PlayerHit(BJHand playerHand, Deck d)
         {
-            return playerHand.IsBusted();
+            bool hit = false;
+            //checks if player is busted, if so sends a message and instantly returns no hit
+            if (playerHand.IsBusted() == false)
+            {
+                Console.WriteLine("Would you like to hit? y/n");
+                string s = Console.ReadLine();
+                //loop to validate input so if anything but y or n is entered, you have to try again
+                bool answered = false;
+                do
+                {
+                    if (s == "y")
+                    {
+                        Console.WriteLine("Here you are then.");
+                        playerHand.AddCard(d);
+                        hit = true;
+                        answered = true;
+                    }
+
+                    else if (s == "n")
+                    {
+                        Console.WriteLine("As you like.");
+                        answered = true;
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("What's that?");
+                    }
+                } while (answered == false);
+
+            }
+            else
+                Console.WriteLine("You're Busted!");
+
+            return hit;
         }
-        public bool ComputerBust(BJHand computerHand)
+        //computer always hits iff it's hand is less than 12
+        public static bool ComputerHit(BJHand computerHand, Deck d)
         {
-            return computerHand.IsBusted();
+            bool hit = false;
+            //no need to check is computer is bust becuase that auto fails the less than 13 condition
+            if(computerHand.Score() <= 13)
+            {
+                Console.WriteLine("Computer hits.");
+                computerHand.AddCard(d);
+                hit = true;
+            }
+            else
+            {
+                Console.WriteLine("Computer does not hit.");
+            }
+            if (computerHand.IsBusted() == true)
+                Console.WriteLine("Computer is Busted!");
+            return hit;
         }
-        //methods to check player/comp scores
-        public int PlayerScore(BJHand playerHand)
+
+        //shows the current hands and scores
+        public static void Hands(BJHand playerHand, BJHand computerHand)
         {
-            return playerHand.Score();
-        }
-        public int ComputerScore(BJHand computerHand)
-        {
-            return computerHand.Score();
+            Console.WriteLine();
+            Console.WriteLine("Player Hand:");
+            Console.WriteLine(playerHand.ToString());
+            Console.WriteLine("Total Player Score: " + playerHand.Score());
+            Console.WriteLine();
+            Console.WriteLine("Computer Hand:");
+            Console.WriteLine(computerHand.ToString());
+            Console.WriteLine("Total Computer Score: " + computerHand.Score());
         }
     }
 }

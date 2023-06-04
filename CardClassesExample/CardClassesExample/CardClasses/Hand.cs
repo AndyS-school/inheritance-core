@@ -27,6 +27,11 @@ namespace CardClasses
             cards.Add(new Card(value, suit));
         }
 
+        public void AddCard(Deck d)
+        {
+            cards.Add(d.Deal());
+        }
+
         // read-only property
         public int NumCards
         {
